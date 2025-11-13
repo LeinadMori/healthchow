@@ -1,68 +1,255 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: #FFD699; /* same as hero */
+  box-shadow: none;           /* seamless with hero */
+  padding: 12px 24px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between; /* logo left, links right */
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0;
 }
 
-h1 {
-  font-size: 3.2em;
+/* Logo */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar .logo img {
+  width: 62px;
+  height: 62px;
+}
+
+.navbar .logo h5 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Nav Links */
+.navbar {
+  background-color: #FFD699;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, button right */
+  padding: 12px 24px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo on the left */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Nav links centered */
+.navbar .nav-links {
+  display: flex;
+  gap: 60px;
+
+
+  /* center links */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .nav-links a
+ { text-decoration: none; color: #333; font-weight: 500; transition: color 0.2s; } .navbar .nav-links a:hover { color: #000; }
+
+/* Navbar Buttons */
+.navbar button {
+  background-color: #fdb944;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px; 
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  /* 3D effect */
+  box-shadow: 0 5px #c47f00;
+  transition: transform 0.1s, box-shadow 0.1s, background 0.2s;
+}
+
+.navbar button:hover {
+  background-color: #f5a623;
+}
+
+/* ================= MOBILE ================= */
+.mobile-menu-button,
+.mobile-menu {
+  display: none; /* hide by default */
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links,
+  .navbar button.desktop-button {
+    display: none; /* hide desktop links/buttons on mobile */
+  }
+
+  .mobile-menu-button {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #fff3d9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+
+  .mobile-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .mobile-menu a:hover {
+    color: #000;
+  }
+}
+
+/* ================= HERO ================= */
+.hero {
+  background-color: #FFD699;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 32px;
+  margin-top: -150px; /* pulls hero closer to navbar */
+}
+
+/* Left Text Area */
+.hero-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #1c1c1c;
+  margin-bottom: 24px;
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: center; /* or left if you want alignment with heading */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+/* Buttons Row */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 14px 36px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+/* Start Delivering button */
+.hero-buttons .deliver {
+  background-color: #f5a623;
+  color: #000;
+  box-shadow: 0 4px #c47f00;
+}
+
+.hero-buttons .deliver:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px #c47f00;
+}
+
+/* Start Ordering button */
+.hero-buttons .order {
+  background-color: #b2e6ff;
+  color: #000;
+  box-shadow: 0 4px #7cc9e0;
+}
+
+.hero-buttons .order:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px #7cc9e0;
+}
+
+/* Image on Right */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.hero-image img {
+  width: 320px;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 120px;
   }
-  a:hover {
-    color: #747bff;
+
+  .hero-text {
+    text-align: left;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .hero-buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .hero-image {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  .hero-image img {
+    width: 450px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hero p {
+    text-align: left;
   }
 }
