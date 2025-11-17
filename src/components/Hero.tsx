@@ -7,8 +7,8 @@ const Hero = () => {
       {/* Text Section */}
       <div className="hero-text">
         <h1>
+        Order. <br />
           Deliver. <br />
-          Order. <br />
           Feel healthy.
         </h1>
         <p>
