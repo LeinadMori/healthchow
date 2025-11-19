@@ -18,8 +18,38 @@ const Navbar = () => {
       {/* Desktop links */}
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/features">Features</Link>
-        <Link to="/vendors">Vendors</Link>
+        <Link to="/about">Features</Link>
+        <div className="dropdown">
+    <Link to="/vendors">Vendors ▼</Link>
+    <div className="dropdown-menu">
+      <div>
+        <h4>Food & Nutrition</h4>
+        <ul>
+          <li>Meal Prep Services</li>
+          <li>Grocery & Organic Stores</li>
+          <li>Dietitian Partners</li>
+          <li>Specialty Cuisine</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Healthcare & Wellness</h4>
+        <ul>
+          <li>Pharmacies</li>
+          <li>Medical Clinics</li>
+          <li>Wellness Providers</li>
+          <li>Medical Supplies</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Extras & Lifestyle</h4>
+        <ul>
+          <li>Subscription Boxes</li>
+          <li>Local Farmers</li>
+          <li>Fitness Centers / Gyms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
         <Link to="/contact">Contact</Link>
       </div>
 
