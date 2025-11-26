@@ -1,5 +1,6 @@
-import heroImage from "../assets/Images/herovan2-removebg-preview.png";
+import heroImage from "../assets/Images/ChatGPT_Image_Nov_20__2025__12_10_39_PM-removebg-preview.png";
 import "../index.css"; // import normal CSS
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,9 +16,13 @@ const Hero = () => {
         HealthChow goes beyond meals — we deliver essential health supplies and connect you instantly with doctors who care.
         </p>
         <div className="hero-buttons">
-          <button className="deliver">Start Delivering</button>
-          <button className="order">Start Ordering</button>
-        </div>
+  <Link to="/delivery">
+    <button className="deliver">Start Delivering</button>
+  </Link>
+  <Link to="/order">
+    <button className="order">Start Ordering</button>
+  </Link>
+</div>
       </div>
 
       {/* Image Section */}

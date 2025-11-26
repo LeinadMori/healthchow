@@ -6,6 +6,9 @@ import About from "./pages/About";
 import Settings from "./pages/Settings";
 import Contact from "./pages/Contact";
 
+
+
+
 function App() {
   return (
     <Router>
@@ -15,6 +18,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/settings" element={<Settings />} />
+
+
+        
+       
       </Routes>
     </Router>
   );
