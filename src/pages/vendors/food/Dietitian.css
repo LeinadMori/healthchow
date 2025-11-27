@@ -1,0 +1,182 @@
+
+/* ==========================
+   Dietitian.css
+   ========================== */
+
+.dietitian-page-container {
+  width: 100%;
+  background: #f3fdf5;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 60px;
+}
+
+/* -------------- HERO SECTION -------------- */
+.dietitian-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 8%;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c7a32;
+}
+
+.hero-text p {
+  color: #4b4b4b;
+  margin-top: 10px;
+  max-width: 350px;
+  line-height: 1.6;
+}
+
+.hero-img {
+  width: 260px;
+  height: 260px;
+  background-image: url('/your-image-path/soursop.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* -------------- BENEFITS SECTION -------------- */
+.benefits-section {
+  text-align: center;
+  padding: 40px 6%;
+}
+
+.benefits-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c7a32;
+  margin-bottom: 20px;
+}
+
+.benefits-center-img {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  background-image: url('/your-image-path/capsule.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.benefit-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c7a32;
+}
+
+/* -------------- NATURAL SECTION -------------- */
+.natural-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 8%;
+  gap: 40px;
+}
+
+.natural-img {
+  width: 260px;
+  height: 200px;
+  background-image: url('/your-image-path/natural.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.natural-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c7a32;
+  margin-bottom: 10px;
+}
+
+.natural-text p {
+  font-size: 14px;
+  color: #5a5a5a;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+/* -------------- WHY CHOOSE US -------------- */
+.choose-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.choose-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c7a32;
+  margin-bottom: 20px;
+}
+
+.choose-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.choose-grid span {
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #2c7a32;
+}
+
+/* -------------- LIFESTYLE SECTION -------------- */
+.lifestyle-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 8%;
+  gap: 40px;
+}
+
+.lifestyle-img {
+  width: 260px;
+  height: 200px;
+  background-image: url('/your-image-path/lifestyle.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.lifestyle-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c7a32;
+  margin-bottom: 10px;
+}
+
+.lifestyle-text p {
+  color: #5a5a5a;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 380px;
+}
+

@@ -1,0 +1,83 @@
+/* ==========================
+font-weight: 600;
+}
+
+
+.desc {
+font-size: 13px;
+margin: 4px 0 6px 0;
+opacity: 0.7;
+}
+
+
+.price {
+font-weight: 700;
+font-size: 15px;
+color: #ff7a12;
+}
+
+
+/* ---------------- Fries Section ---------------- */
+.fries-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 8%;
+    gap: 30px;
+    }
+    
+    
+    .fries-img {
+    width: 260px;
+    height: 180px;
+    background-image: url('/your-image-path/fries.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
+    
+    .fries-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    }
+    
+    
+    .fries-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+    }
+    
+    
+    /* ---------------- Services ---------------- */
+    .services {
+    text-align: center;
+    margin-top: 40px;
+    }
+    
+    
+    .services h3 {
+    font-size: 22px;
+    font-weight: 700;
+    }
+    
+    
+    .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+    }
+    
+    
+    .service-list span {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 14px;
+    }
+    
+    

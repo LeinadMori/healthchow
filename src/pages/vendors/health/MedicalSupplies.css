@@ -1,0 +1,129 @@
+/* General layout */
+.medical-supplies-page {
+    width: 100%;
+    background: #f7fafb;
+    padding-bottom: 60px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ---------------- HERO ---------------- */
+  .ms-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  
+  .ms-hero-text h1 {
+    font-size: 35px;
+    color: #083b53;
+    margin-bottom: 10px;
+  }
+  
+  .ms-hero-text p {
+    color: #5b7a88;
+    margin-bottom: 20px;
+  }
+  
+  .ms-btn {
+    background: #00c4a7;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .ms-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .ms-hero-image img {
+    width: 380px;
+    border-radius: 10px;
+  }
+  
+  /* ---------------- CATEGORIES ---------------- */
+  .ms-categories {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .ms-categories h2 {
+    color: #083b53;
+    margin-bottom: 30px;
+  }
+  
+  .ms-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 10%;
+  }
+  
+  .ms-category-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.25s;
+  }
+  .ms-category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ms-category-card img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .ms-category-card p {
+    color: #083b53;
+    font-weight: 600;
+  }
+  
+  
+  /* ---------------- PRODUCTS ---------------- */
+  .ms-products {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .ms-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 10%;
+    margin-top: 20px;
+  }
+  
+  .ms-product-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .ms-product-image {
+    background: #e8f4f7;
+    height: 140px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .ms-product-card h4 {
+    color: #083b53;
+  }
+  
+  .ms-product-desc {
+    color: #5b7a88;
+    font-size: 14px;
+    margin: 8px 0 15px;
+  }
+  

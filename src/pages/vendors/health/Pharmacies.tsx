@@ -1,8 +1,8 @@
 // React Component (PharmacyPage.jsx)
 import React from "react";
-import "../PharmacyPage.css";
+import "./PharmacyPage.css";
 
-export default function PharmacyPage() {
+export default function Pharmacies() {
   return (
     <div className="pharmacy-page">
       {/* Hero Section */}
