@@ -1,0 +1,232 @@
+/* =====================================
+   GENERAL PAGE
+===================================== */
+
+.grocery-page {
+    font-family: "Poppins", sans-serif;
+    color: #1b5e20;
+  }
+  
+  /* =====================================
+     HERO SECTION
+  ===================================== */
+  
+  .grocery-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    background:#FFD699 ;
+    margin-bottom: 60px;
+    margin-top: -80px;
+  }
+  
+  .hero-text h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    color: #1c1c1c;
+  }
+  
+  .hero-text span {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1c1c1c ;
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .hero-text p {
+    color: #444;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 24px;
+  }
+  
+  .hero-text button {
+    
+  background-color: #43a047;   /* your green */
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px #2e7d32;   /* darker green for shadow */
+}
+
+
+
+  
+  .hero-text button:hover {
+    transform: translateY(-2px);
+  box-shadow: 0 6px #2e7d32;   /* deeper shadow */
+  background-color: #2e7d32;   /* hover green */
+  
+  }
+  
+  .hero-image img {
+    width: 380px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* =====================================
+     TOP CATEGORIES
+  ===================================== */
+  
+  .top-categories {
+    padding: 40px 8%;
+    text-align: center;
+  }
+  
+  .top-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+  
+  .category-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  }
+  
+  .cat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+  }
+  
+  /* =====================================
+     PRODUCT SECTION
+  ===================================== */
+  
+  .product-section {
+    padding: 40px 8%;
+  }
+  
+  .product-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+  }
+  
+  .product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-img {
+    height: 150px;
+    background: #d7ffd9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .product-name {
+    font-weight: 600;
+  }
+  
+  .product-price {
+    color: #2e7d32;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+  
+  .product-card button {
+    background: #43a047;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background: #2e7d32;
+  }
+  
+  /* =====================================
+     DEAL OF THE WEEK
+  ===================================== */
+  
+  .deal-section {
+    padding: 50px 8%;
+  }
+  
+  .deal-card {
+    background: #e8f9e9;
+    padding: 30px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .deal-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .deal-card p {
+    margin-bottom: 20px;
+  }
+  
+  .deal-card button {
+    background: #43a047;
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .deal-card button:hover {
+    background: #2e7d32;
+  }
+  
+  /* =====================================
+     RESPONSIVE
+  ===================================== */
+  
+  @media (max-width: 900px) {
+    .grocery-hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      margin-top: 25px;
+      width: 260px;
+    }
+  }
+  

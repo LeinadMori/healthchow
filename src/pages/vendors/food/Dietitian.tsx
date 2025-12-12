@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dietitian.css";
+import heroImage from "../../../assets/Images/mealpe-removebg-preview.png";
 
 export default function DietitianPage() {
   return (
@@ -13,7 +14,9 @@ export default function DietitianPage() {
             your immunity, wellness, and long‑term vitality.
           </p>
         </div>
-        <div className="hero-img"></div>
+        <div className="hero-right">
+    <img src={heroImage} alt="Meal Prep Hero" />
+  </div>
       </section>
 
       {/* Benefits Section */}

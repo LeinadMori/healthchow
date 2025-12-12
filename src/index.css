@@ -233,13 +233,13 @@
 /* ================= HERO ================= */
 .hero {
   background-color: #FFD699;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  padding:80px 16px;
-  margin-top: -162px; /* pulls hero closer to navbar */
-  gap:3px;
+    display: flex;
+    align-items: center;
+    padding: 80px 16%;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFD699;
+    margin-bottom: 50px;
 }
 
 /* Left Text Area */
@@ -389,7 +389,6 @@
     text-align: left;
   }
 }
-
 
 /* === ABOUT SECTION === */
 /* CONTAINER */
@@ -789,6 +788,21 @@ body {
 .contact-form button:hover {
   background: #f0c567;
 }
+
+
+
+.form-success {
+  margin-top: 10px;
+  color: #0aaf55;
+  font-weight: bold;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 }
 .footer {

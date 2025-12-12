@@ -17,9 +17,6 @@ const Hero = () => {
         </p>
         <div className="hero-buttons">
   <Link to="/delivery">
-    <button className="deliver">Start Delivering</button>
-  </Link>
-  <Link to="/order">
     <button className="order">Start Ordering</button>
   </Link>
 </div>

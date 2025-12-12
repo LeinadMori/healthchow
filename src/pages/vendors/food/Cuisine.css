@@ -1,83 +1,154 @@
-/* ==========================
-font-weight: 600;
-}
-
-
-.desc {
-font-size: 13px;
-margin: 4px 0 6px 0;
-opacity: 0.7;
-}
-
-
-.price {
-font-weight: 700;
-font-size: 15px;
-color: #ff7a12;
-}
-
-
-/* ---------------- Fries Section ---------------- */
-.fries-section {
+.food-recipes-page {
+    width: 100%;
+    background: #fafafa;
+    color: #333;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 60px;
+  }
+  
+  /* HERO */
+  .hero {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 8%;
-    gap: 30px;
-    }
-    
-    
-    .fries-img {
-    width: 260px;
-    height: 180px;
-    background-image: url('/your-image-path/fries.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-    
-    
-    .fries-text h3 {
-    font-size: 22px;
-    font-weight: 700;
+    padding: 60px 8%;
+    background: #FFD699;
+    border-bottom: 1px solid #eee;
+    margin-top: -65px;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    font-weight: 800;
     margin-bottom: 10px;
-    }
-    
-    
-    .fries-text p {
-    font-size: 14px;
-    line-height: 1.6;
-    opacity: 0.8;
-    }
-    
-    
-    /* ---------------- Services ---------------- */
-    .services {
+    color: #1c1c1c;
+  }
+  
+  .hero-content p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .hero-btn {
+    padding: 12px 28px;
+    background: #7cc576;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background: #67ad62;
+  }
+  
+  .hero-img {
+    width: 420px;
+    border-radius: 14px;
+  }
+  
+  /* FEATURED RECIPES */
+  .featured-recipes {
+    padding: 60px 8%;
     text-align: center;
-    margin-top: 40px;
-    }
-    
-    
-    .services h3 {
-    font-size: 22px;
-    font-weight: 700;
-    }
-    
-    
-    .service-list {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 15px;
-    }
-    
-    
-    .service-list span {
+  }
+  
+  .featured-recipes h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+  
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  
+  .recipe-card {
     background: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    font-size: 14px;
-    }
-    
-    
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .recipe-card p {
+    color: #666;
+    font-size: 15px;
+  }
+  
+  /* SERVICES */
+  .services {
+    padding: 60px 8%;
+    background: #ffffff;
+  }
+  
+  .services h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+  }
+  
+  .service-item {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .service-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-item p {
+    color: #666;
+    font-size: 15px;
+  }
+  
+  /* STORY */
+  .story {
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  .story h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .story p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

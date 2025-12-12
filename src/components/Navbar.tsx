@@ -13,25 +13,24 @@ const Navbar = () => {
     {
       title: "Food & Nutrition",
       items: [
-        { name: "Meal Prep Services", link: "/vendors/food/meal-prep" },
-        { name: "Grocery & Organic Stores", link: "/vendors/food/grocery" },
+        { name: "Meal Prep Services", link: "/vendors/food/MealPrepPage" },
+        { name: "Grocery & Organic Stores", link: "/vendors/food/GroceryPage" },
         { name: "Dietitian Partners", link: "/vendors/food/dietitian" },
-        { name: "Specialty Cuisine", link: "/vendors/food/specialty-cuisine" },
+        { name: "Specialty Cuisine", link: "/vendors/food/Cuisine" },
       ],
     },
     {
       title: "Healthcare & Wellness",
       items: [
         { name: "Pharmacies", link: "/vendors/health/pharmacies" },
-        { name: "Medical Clinics", link: "/vendors/health/clinics" },
-        { name: "Wellness Providers", link: "/vendors/health/wellness" },
+        { name: "Medical Clinics", link: "/vendors/health/medical-clinics" },
         { name: "Medical Supplies", link: "/vendors/health/medical-supplies" },
       ],
     },
     {
       title: "Extras & Lifestyle",
       items: [
-        { name: "Subscription Boxes", link: "/vendors/lifestyle/subscription-boxes" },
+        { name: "Subscription Boxes", link: "/vendors/lifestyle/Subscription" },
         { name: "Local Farmers", link: "/vendors/lifestyle/local-farmers" },
         { name: "Fitness Centers / Gyms", link: "/vendors/lifestyle/gyms" },
       ],

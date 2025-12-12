@@ -1,117 +1,139 @@
+/* pharmacyPage.css */
+
 .pharmacy-page {
-    width: 100%;
-    background: #ffffff;
-  }
-  
-  /* Hero Section */
-  .pharmacy-hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #F8EDE3;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-  }
-  
-  .pharmacy-hero-text h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .pharmacy-hero-text p {
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .pharmacy-hero-text button {
-    background: #2563eb;
-    color: #fff;
-    padding: 10px 18px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .pharmacy-hero-image img {
-    width: 180px;
-  }
-  
-  /* Features Section */
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .feature-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  /* Categories */
-  .categories {
-    padding: 20px;
-  }
-  
-  .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 15px;
-  }
-  
-  .category-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .category-icon {
-    width: 60px;
-    height: 60px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-  }
-  
-  /* Daily Deals */
-  .daily-deals {
-    padding: 20px;
-  }
-  
-  .deals-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
-  }
-  
-  .deal-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .deal-image {
-    width: 100%;
-    height: 100px;
-    background: #e5e5e5;
-    margin-bottom: 10px;
-  }
-  
-  .add-btn {
-    background: #2563eb;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  background: #f5f7ff;
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.hero-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #2e4fd1;
+}
+
+.hero-img {
+  width: 350px;
+}
+
+/* SERVICE CARDS */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-btn {
+  padding: 0.8rem 1.8rem;
+  margin-top: 1rem;
+  background: #4a6cf7;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.about-img-box {
+  width: 350px;
+  height: 300px;
+  background: #dce3ff;
+  border-radius: 20px;
+}
+
+/* CARE AREAS */
+.care-areas {
+  padding: 4rem 2rem;
+}
+
+.care-areas h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.care-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.care-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* TRACK RECORD */
+.track-record {
+  display: flex;
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.track-img {
+  width: 300px;
+  height: 250px;
+  background: #d5e1ff;
+  border-radius: 20px;
+}
+
+.track-text {
+  max-width: 500px;
+}

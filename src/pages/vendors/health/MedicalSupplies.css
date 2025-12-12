@@ -11,27 +11,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 10%;
-    background: #ffffff;
-    border-radius: 10px;
-    margin: 40px auto;
-    max-width: 1200px;
+    padding: 80px 16%;
+    background: #FFD699;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-top: -90px;
   }
   
+  .ms-hero-text {
+    margin-top: -70px;          /* optional: fine-tune text block higher */
+  }
   .ms-hero-text h1 {
-    font-size: 35px;
-    color: #083b53;
-    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1c1c1c;
+    margin-top: -100px;
   }
   
   .ms-hero-text p {
     color: #5b7a88;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   
   .ms-btn {
-    background: #00c4a7;
+    background-color: #b2e6ff;
+    color: #000;
+    box-shadow: 0 4px #7cc9e0;
     color: white;
     padding: 12px 28px;
     border: none;
@@ -45,7 +49,7 @@
   
   .ms-hero-image img {
     width: 380px;
-    border-radius: 10px;
+    margin-top: -60px;          /* optional: fine-tune text block higher */
   }
   
   /* ---------------- CATEGORIES ---------------- */
@@ -93,7 +97,22 @@
   .ms-products {
     margin-top: 60px;
     text-align: center;
+    background: #f6f6f6;
   }
+
+  .ms-products h2 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #b1f4b7;         
+    margin-bottom: 40px;      
+  }
+
+  .ms-products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  
   
   .ms-product-grid {
     display: grid;
@@ -118,7 +137,8 @@
   }
   
   .ms-product-card h4 {
-    color: #083b53;
+    color: #00090e;
+    
   }
   
   .ms-product-desc {

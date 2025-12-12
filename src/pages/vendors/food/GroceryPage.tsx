@@ -25,7 +25,7 @@ export default function GroceryPage() {
       <section className="grocery-hero">
         <div className="hero-text">
           <h1>Farm Fresh Organic</h1>
-          <span>Vegetables & Fruits</span>
+          <h1>Vegetables & Fruits</h1>
           <p>Delivered fresh from the farm to your kitchen.</p>
           <button>Shop Now</button>
         </div>
