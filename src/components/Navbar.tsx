@@ -32,7 +32,6 @@ const Navbar = () => {
       items: [
         { name: "Subscription Boxes", link: "/vendors/lifestyle/Subscription" },
         { name: "Local Farmers", link: "/vendors/lifestyle/local-farmers" },
-        { name: "Fitness Centers / Gyms", link: "/vendors/lifestyle/gyms" },
       ],
     },
   ];

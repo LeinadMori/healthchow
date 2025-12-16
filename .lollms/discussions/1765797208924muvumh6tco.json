@@ -1,0 +1,22 @@
+{
+  "id": "1765797208924muvumh6tco",
+  "title": "New Discussion",
+  "messages": [],
+  "timestamp": 1765797209048,
+  "groupId": null,
+  "plan": null,
+  "capabilities": {
+    "codeGenType": "full",
+    "fileRename": true,
+    "fileDelete": true,
+    "fileSelect": true,
+    "fileReset": true,
+    "imageGen": true,
+    "webSearch": false,
+    "arxivSearch": false,
+    "funMode": false,
+    "thinkingMode": "none",
+    "gitCommit": true
+  },
+  "personalityId": "default_coder"
+}
